@@ -14,6 +14,12 @@ API Implementation Test
 
 This project uses `sail` to build up the development environment. If you do not have `php@8.2` on your machine and do not want to mess up your environment, you can have `docker` installed, run, and just execute  `./vendor/bin/sail up -d` in the project root in terminal to boot up the development environment.
 
+- Steps after `git clone` to set up the development environment:
+1. `composer install`
+2. `cp .env.example .env`
+3. `./vendor/bin/sail up -d`
+4. `./vendor/bin/sail artisan key:generate`
+
 As the development environment is up, to test, type:
 - `./vendor/bin/sail artisan test`
 
